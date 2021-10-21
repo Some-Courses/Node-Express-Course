@@ -9,11 +9,11 @@
 ### 01. Una primera parte gratuita, que tiene las siguientes secciones:
 
 * Los fundamentos principales de Node y de Express. El video de las lecciones está disponible en este [link](https://www.youtube.com/watch?v=TNV0_7QRDwY) de Youtube.
-    * [Tutorial Node](./01-node-tutorial/README.md): __Completado__
-    * [Tutorial Express](./02-express-tutorial/README.md): __Completado__
+    * [Tutorial Node](./01-node-tutorial/): __Completado__
+    * [Tutorial Express](./02-express-tutorial/): __Completado__
 * Cuatro proyectos para desarrollar donde se utilizan las librerías de backend antes vistas. El video de esta sección está disponible [aquí](https://www.youtube.com/watch?v=rltfdjcXjmk) 
-    * [Task Manager](./03-task-manager/README.md): (MongoDB y Mongoose) __Completado__
-    * [Store API](./04-store-api/README.md): __`En curso`__
+    * [Task Manager](./03-task-manager/): (MongoDB y Mongoose) __Completado__
+    * [Store API](./04-store-api/): __`En curso`__
     * Jason Web Tokens (JWS) Basics: __Pendiente__
     * Jobs API:  __Pendiente__
 

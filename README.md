@@ -9,14 +9,14 @@
  ### 01. A free and open one, which has the following sections:
 
 * The core fundamentals of Node and Express section. You can watch the lessons [here](https://www.youtube.com/watch?v=TNV0_7QRDwY).
-    *  [Node Tutorial](./01-node-tutorial/README.md): __Completed__
-    *  [Express Tutorial](./02-express-tutorial/README.md): __Completed__
+    *  [Node Tutorial](./01-node-tutorial/): __Completed__
+    *  [Express Tutorial](./02-express-tutorial/): __Completed__
 
 
 * Four hands on proyects to understand and implement the BackEnd libraries. You can find this section's video [here](https://www.youtube.com/watch?v=rltfdjcXjmk) 
 
-  * [Task Manager](./03-task-manager/README.md): (MongoDB and Mongoose) __Completed__
-  * [Store API](./04-store-api/README.md): __`Working on`__
+  * [Task Manager](./03-task-manager/): (MongoDB and Mongoose) __Completed__
+  * [Store API](./04-store-api/): __`Working on`__
   * Jason Web Tokens (JWS) Basics: __To do__
   * Jobs API: __To do__
 

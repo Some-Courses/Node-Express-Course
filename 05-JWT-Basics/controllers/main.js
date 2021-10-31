@@ -1,6 +1,7 @@
 require('dotenv');
 const jwt = require('jsonwebtoken');
-const CustomAPIError = require('../errors/custom-error');
+const {BadRequest} = require('../errors/');
+
 
 
 
@@ -13,7 +14,7 @@ const login = async(req, res)=>{
   //--check manually here in the controler
 
   if(!username || !password){
-    throw new CustomAPIError("Please set a valid Username and Password ",400)
+    throw new BadRequest("Please set a valid Username and Password ")
   }
   //id just for demo purposes
   const id = new Date().getDate();

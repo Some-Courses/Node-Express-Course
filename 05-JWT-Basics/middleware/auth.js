@@ -1,10 +1,10 @@
 const jwt = require('jsonwebtoken');
-const CustomAPIError = require('../errors/custom-error');
+const {UnauthenticatedError} = require('../errors/');
 
 const authMidd =(req, res, next)=>{
   const authHeader = req.headers.authorization;
   if(!authHeader || !authHeader.startsWith("Bearer")){ 
-    throw new CustomAPIError("No token provided", 401);
+    throw new UnauthenticatedError("No token provided");
   }
   //I retrieve the token's code.
   const token = authHeader.split(" ")[1];
@@ -15,7 +15,7 @@ const authMidd =(req, res, next)=>{
     req.user = {id, username};
     next();
   }catch(err){
-    throw new CustomAPIError("Unauthorized token", 401);
+    throw new UnauthenticatedError("Unauthorized token", 401);
   }
 
   

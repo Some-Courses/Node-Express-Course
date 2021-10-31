@@ -2,11 +2,8 @@ require('dotenv');
 const jwt = require('jsonwebtoken');
 const CustomAPIError = require('../errors/custom-error');
 
-//todo: check username, pwd in post(login) request
-//* if exists create a new JWT
-//* send back to front-end
 
-//todo: setup auth in order to allow access to dashboard only when we have JWT authenticated requests.
+
 const login = async(req, res)=>{
   const {username, password}= req.body;
 
@@ -27,22 +24,14 @@ const login = async(req, res)=>{
 };
 
 const dashboard  =async(req, res)=>{
-  const authHeader = req.headers.authorization;
-
-  if(!authHeader || !authHeader.startsWith("Bearer")) throw new CustomAPIError("No token provided", 401)
-  //"Bearer token"
-  const token = authHeader.split(" ")[1];
-  //[Token Verification
-  try{
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    console.log("Decoded Token: ",decoded);
-  
-    const luckyNumber = Math.floor(Math.random()*100);
-    res.status(200).json({msg: `Hello ${decoded.username}`, secret:`Here is your authorized data, your lucky number is ${luckyNumber}`});
-  }catch(err){
-    throw new CustomAPIError("Unauthorized token", 401);
-  }
-
+  //the verification of the JWT token is in charge of the auth middleware, if it is valid, then this function is executed
+  // and recieves the "req.user" object with the corresponding propertyes.
+  const {id, username} = req.user
+  const luckyNumber = Math.floor(Math.random()*100);
+  res.status(200).json({
+    msg: `Hello ${username}, Id: ${id}`, 
+    secret:`Here is your authorized data, your lucky number is ${luckyNumber}`
+  });
 
 };
 

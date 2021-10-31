@@ -31,7 +31,7 @@ const start = async () => {
 
 start();
 
-//5:49:32
+//6:03:27
 
 /* //|JWT - Stateless
 Jason Web Tokens are just a way to exchange data between two parties.

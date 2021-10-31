@@ -14,8 +14,8 @@
 * Cuatro proyectos para desarrollar donde se utilizan las librerías de backend antes vistas. El video de esta sección está disponible [aquí](https://www.youtube.com/watch?v=rltfdjcXjmk) 
     * [Task Manager](./03-task-manager/): (MongoDB y Mongoose) __Completado__
     * [Store API](./04-store-api/):  __Completado__
-    * [Jason Web Tokens (JWT) Basics](./05-JWT-Basics/): __`En curso`__
-    * Jobs API:  __Pendiente__
+    * [Jason Web Tokens (JWT) Basics](./05-JWT-Basics/): __Completado__
+    * [Jobs API](./06-Jobs-API/):  __`En curso`__
 
 ### 02. Una segunda parte exclusiva, accesible vía [este curso](https://www.udemy.com/course/nodejs-tutorial-and-projects-course/?referralCode=E94792BEAE9ADD204BC7):
 

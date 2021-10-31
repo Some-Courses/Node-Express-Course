@@ -17,8 +17,8 @@
 
   * [Task Manager](./03-task-manager/): (MongoDB and Mongoose) __Completed__
   * [Store API](./04-store-api/): __Completed__
-  * [Jason Web Tokens (JWT) Basics](./05-JWT-Basics/): __`Working on`__
-  * Jobs API: __To do__
+  * [Jason Web Tokens (JWT) Basics](./05-JWT-Basics/): __Completed__
+  * [Jobs API](./06-Jobs-API/): __`Working on`__
 
 
 

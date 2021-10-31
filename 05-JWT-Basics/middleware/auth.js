@@ -15,7 +15,7 @@ const authMidd =(req, res, next)=>{
     req.user = {id, username};
     next();
   }catch(err){
-    throw new UnauthenticatedError("Unauthorized token", 401);
+    throw new UnauthenticatedError("Unauthorized token");
   }
 
   
